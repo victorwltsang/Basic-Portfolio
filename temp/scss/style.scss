@@ -1,5 +1,89 @@
-@import './base/mixins';
+@import './base/variables';
+@import './base/mixins'; // *{
+//
+//   border:1px dashed red !important;
+// }
 
-body{
+body,
+html {
+    height: 100%;
+}
 
+body {
+    background: url('../images/asanoha-400px.png') repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+body,
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+/*--- helper classes ---*/
+.text-center {
+    text-align: center;
+}
+/*--- wrapper ---*/
+.container {
+    min-height   : 100%;
+    /* equal to footer height */
+    margin-bottom: -102px;
+}
+
+.container:after {
+    content: "";
+    display: block;
+}
+
+.container:after,
+.site-footer {
+    height: 102px;
+}
+
+.site-footer {
+    background-color: #666;
+    color           : #c5ccb8;
+    font-size       : 14px;
+
+    & p {
+        margin: 40px 0;
+    }
+
+    &__ascent {
+        background-color: $teal;
+        height          : 8px;
+    }
+}
+
+.wrapper {
+    max-width   : 960px;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.site-header {
+    background-color: #fff;
+    border-bottom   : 2px solid #ccc;
+
+    &__logo {
+        width: 300px;
+    }
+
+    &--tealbg {
+        background-color: $teal;
+    }
+
+    &__text {
+        text-align: center;
+        color     : white;
+        font-size : 40px;
+        padding   : 34px;
+    }
 }
