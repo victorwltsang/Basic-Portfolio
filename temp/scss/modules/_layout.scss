@@ -1,0 +1,72 @@
+body,
+html {
+    height: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+}
+
+body,
+p {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+
+
+h2{
+  color:$teal;
+  font-size:22px;
+}
+
+.wrapper {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    @include clearfix;
+
+    &--padding-top-bottom {
+        padding: 40px 0;
+    }
+}
+
+
+.container {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -102px;
+    background: url('../images/asanoha-400px.png') repeat;
+}
+
+.container:after {
+    content: "";
+    display: block;
+}
+
+.container:after,
+.site-footer {
+    height: 102px;
+}
+
+.site-footer {
+    background-color: #666;
+    color: #ccc;
+    font-size: 14px;
+
+    & p {
+        margin: 40px 0;
+    }
+
+    &__ascent {
+        background-color: $teal;
+        height: 8px;
+    }
+
+}

@@ -1,11 +1,11 @@
 @mixin atSmall{
-  @media (min-width: 530px){
+  @media (max-width: 523px){
     @content;
   }
 }
 
 @mixin atMedium{
-  @media (min-width: 800px){
+  @media (max-width: 940px){
     @content;
   }
 }

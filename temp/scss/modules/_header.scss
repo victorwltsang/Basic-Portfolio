@@ -1,0 +1,40 @@
+.site-header {
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    @include clearfix;
+
+
+    &--pull-left {
+        float: left;
+
+        @include atSmall {
+          float:none;
+        }
+    }
+    &__logo {
+
+      @include atSmall {
+        width:45%;
+        margin:0 auto;
+      }
+
+    }
+
+    &--tealbg {
+        background-color: $teal;
+    }
+
+    &__text {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding: 30px 20px;
+
+
+        @include atSmall {
+            font-size: 22px;
+            padding: 30px 20px;
+
+        }
+    }
+}

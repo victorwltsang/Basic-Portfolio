@@ -1,0 +1,52 @@
+.sidebar {
+    &--size-md {
+        max-width: 270px;
+        width: 100%;
+        padding: 30px 10px;
+        text-align: center;
+        @include atMedium {
+            max-width: 960px;
+            margin-top: 40px;
+        }
+    }
+
+    &--pull-right {
+        float: right;
+        @include atMedium {
+            float: left;
+        }
+    }
+
+    &__bg {
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    &__title {
+        font-weight: bold;
+    }
+
+    li {
+        display: inline;
+        padding: 10px;
+        @include atSmall {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    img {
+        width: 50px;
+    }
+
+    li:hover {
+        border-bottom: 2px solid $teal;
+    }
+
+    hr {
+        width: 80%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        opacity: 0.30;
+    }
+}
