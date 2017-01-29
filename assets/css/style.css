@@ -240,10 +240,20 @@ h2 {
   line-height: 180%;
 }
 
+@media (max-width: 523px) {
+  .main__bio {
+    text-align: center;
+  }
+}
+
 .main hr {
   margin-top: 15px;
   margin-bottom: 15px;
   border: 2px solid #ddd;
+}
+
+.about {
+  padding-top: 20px;
 }
 
 .sidebar--size-md {

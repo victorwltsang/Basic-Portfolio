@@ -36,6 +36,7 @@
         height: auto;
         margin-right: 20px;
         float: left;
+      
         @include atSmall {
             float: none;
             display: block;
@@ -49,6 +50,10 @@
     &__bio {
         color: $mainColor;
         line-height: 180%;
+        @include atSmall {
+                text-align: center;
+            }
+
     }
 
     & hr {
@@ -56,4 +61,8 @@
         margin-bottom: 15px;
         border: 2px solid #ddd;
     }
+}
+
+.about{
+    padding-top:20px;
 }
