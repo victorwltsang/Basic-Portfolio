@@ -7,38 +7,11 @@
 @import './modules/main';
 @import './modules/sidebar';
 @import './modules/portfolio';
+@import './modules/contact-form';
+
 
 
 // * {
 //     background-color: rgba(0,0,0,.10);
 //     border: 1px dashed red !important;
 // }
-
-.contact__form{
-  & input[type="text"], textarea{
-    width:100%;
-    border:1px solid #ccc;
-    color:$mainColor;
-    font-size:15px;
-      padding:10px;
-  }
-
-
-  & p{
-    padding-top:16px;
-    padding-bottom:8px;
-    color:$mainColor;
-  }
-
-  &--btn{
-    background-color:$teal;
-    outline:none;
-    border:none;
-    color:#fff;
-    margin-top:15px;
-    padding:15px 25px;
-    font-size:16px;
-    cursor: pointer;
-  }
-
-}

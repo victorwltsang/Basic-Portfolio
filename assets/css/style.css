@@ -11,6 +11,10 @@ html {
   height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -101,7 +105,7 @@ h2 {
 
 @media (max-width: 523px) {
   .site-header__logo {
-    width: 45%;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -134,9 +138,22 @@ h2 {
   float: right;
 }
 
+@media (max-width: 523px) {
+  .primary-nav--pull-right {
+    float: none;
+  }
+}
+
 .primary-nav ul {
   margin-top: 40px;
   margin-right: -15px;
+}
+
+@media (max-width: 523px) {
+  .primary-nav ul {
+    margin: 30px 0;
+    text-align: center;
+  }
 }
 
 .primary-nav li {
@@ -159,12 +176,6 @@ h2 {
 .primary-nav a:hover {
   color: #4aaaa5;
   transition: all 0.25s ease-in;
-}
-
-@media (max-width: 523px) {
-  .primary-nav {
-    display: none;
-  }
 }
 
 .main--size-md {
