@@ -176,6 +176,7 @@ h2 {
 
 .primary-nav a:hover {
   color: #4aaaa5;
+  -webkit-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
 

@@ -1,6 +1,7 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    browserSync = require('browser-sync').create();
+    browserSync = require('browser-sync').create(),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function() {
     return gulp.src('./temp/scss/style.scss')
@@ -11,6 +12,7 @@ gulp.task('styles', function() {
             console.log(errorInfo.toString());
             this.emit('end');
         })
+	.pipe(autoprefixer())
         .pipe(gulp.dest('./assets/css'))
         .pipe(browserSync.reload({
             stream: true
