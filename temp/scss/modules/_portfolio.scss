@@ -8,10 +8,21 @@
         width: 48%;
         position: relative;
 
+        @include atSmall{
+          width:100%;
+          float:none;
+        }
 
         &:nth-child(even) {
             float: right;
+
+            @include atSmall{
+
+              float:none;
+            }
         }
+
+
 
         &--img {
             width: 100%;
