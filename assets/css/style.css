@@ -351,16 +351,26 @@ h2 {
 .portfolio .portfolio__card--img {
   width: 100%;
   height: 200px;
+  border: 1px solid #aaa;
+  border-radius: 2px;
 }
 
 .portfolio .portfolio__card--stripe {
   position: absolute;
   width: 100%;
-  bottom: 10px;
+  bottom: 0;
   text-align: center;
   background-color: #4aaaa5;
   color: white;
   padding: 20px 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.portfolio .portfolio__card:hover .portfolio__card--stripe {
+  bottom: 10%;
+  opacity: 1;
 }
 
 .contact__form input[type="text"], .contact__form textarea {
